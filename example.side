@@ -1,0 +1,75 @@
+{
+  "id": "11761eba-f3ae-470b-b30a-6ea8cf66a23b",
+  "version": "2.0",
+  "name": "example",
+  "url": "https://www.google.com",
+  "tests": [{
+    "id": "f71b9502-c9af-4d3b-8a9f-7700fd02a3e2",
+    "name": "example",
+    "commands": [{
+      "id": "97db9782-0874-447a-bec1-01c0f9948639",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4baf4f9d-40e6-4d41-b510-2517aa92a154",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1024x768",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e386d20d-c090-4244-8225-6c352ccb41af",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//textarea",
+      "targets": [
+        ["id=APjFqb", "id"],
+        ["name=q", "name"],
+        ["css=#APjFqb", "css:finder"],
+        ["xpath=//textarea[@id='APjFqb']", "xpath:attributes"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bd1c831d-405c-4895-bcce-36d622ffc320",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//textarea",
+      "targets": [
+        ["id=APjFqb", "id"],
+        ["name=q", "name"],
+        ["css=#APjFqb", "css:finder"],
+        ["xpath=//textarea[@id='APjFqb']", "xpath:attributes"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "example typing into box"
+    }, {
+      "id": "27721ad5-483d-42eb-96ba-21fa9160074c",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "xpath=//textarea",
+      "targets": [],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "0f37454d-bf08-45c4-b6c1-6bdd3d380fc4",
+      "comment": "",
+      "command": "pause",
+      "target": "1",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "16398e3b-d25d-4a90-b969-1f3b500d4d53",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["f71b9502-c9af-4d3b-8a9f-7700fd02a3e2"]
+  }],
+  "urls": ["https://www.google.com/"],
+  "plugins": []
+}
